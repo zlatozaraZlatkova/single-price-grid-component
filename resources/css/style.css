@@ -18,8 +18,8 @@ body {
 html {
     display: table;
     width: 100%;
-    box-sizing: border-box;
-
+    
+  
 }
 
 body {
@@ -50,7 +50,7 @@ body {
     margin: 0 auto;
     /*put in the center*/
     max-width: 960px;
-    padding-top: 10rem;
+   
 }
 
 .block {
@@ -58,6 +58,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(100px, auto);
     overflow: hidden;
+    margin: 20px;
     border-radius: 0.5rem;
     box-shadow: 0.6rem 0.6rem 0.6rem hsla(218, 22%, 67%, 0.3);
 
