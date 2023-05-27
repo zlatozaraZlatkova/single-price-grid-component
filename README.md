@@ -23,8 +23,8 @@ The shift between the layouts was a nice test for building responsive projects.
 
 ### Links
 
-- Solution URL: [repository]()
-- visit website [website]()
+- Solution URL: [repository](https://github.com/zlatozaraZlatkova/single-price-grid-component)
+- visit website [website](https://price-single-grid-component.netlify.app/)
 
 
 ## My process
@@ -34,7 +34,7 @@ The shift between the layouts was a nice test for building responsive projects.
 - Semantic HTML5 markup
 - CSS custom properties
 - Grid and Flexbox
-- Mobile-First design
+- Desktop-First design
 - Responsive Web design
 
 
