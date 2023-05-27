@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+
+}
+
+/* align entire html body to the center */
+html,
+body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family: 'Karla', sans-serif;
+    line-height: 1.5;
+    background-color: var(--Light-Gray);
+
+
+
+}
+
+/*Desktop*/
+
+.container {
+    color: var(--Grayish-Blue);
+    margin: 0 auto;
+    /*put in the center*/
+    max-width: 960px;
+    padding-top: 10rem;
+
+
+
+}
+
+.block {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0.6rem 0.6rem 0.6rem hsla(218, 22%, 67%, 0.3);
+
+
+
+}
+
+.block-1 {
+    background-color: white;
+    grid-column: 1/3;
+    grid-row: 1 / 3;
+    padding: 2rem;
+
+
+}
+
+.block-2 {
+    background-color: var(--Cyan);
+    color: var(--Light-Gray);
+    grid-column: 1;
+    grid-row: 3 / 4;
+    padding: 2rem;
+
+}
+
+.block-3 {
+    background-color: hsla(179, 62%, 43%, 0.8);
+    color: var(--Light-Gray);
+    grid-column: 2;
+    grid-row: 3/4;
+    padding: 2rem;
+}
+
+
+.block-1 h1 {
+    color: var(--Cyan);
+    font-weight: 700;
+
+}
+
+.block-1 h3 {
+    color: var(--Bright-Yellow);
+    font-weight: 700;
+}
+
+.block-2 span {
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+
+button {
+
+    padding: 0.5rem 5.5rem;
+    background-color: var(--Bright-Yellow);
+    border-radius: 0.3rem;
+    text-align: center;
+    border: 0.1rem solid var(--Bright-Yellow);
+    box-shadow: 1rem 1rem 1rem var(--Cyan);
+
+}
+
+button:hover {
+    background-color: var(--Cyan);
+    border: 1px solid var(--Light-Gray);
+
+}
+
+button a {
+    text-decoration: none;
+    color: var(--Light-Gray);
+}
+
+button a:hover {
+    cursor: pointer;
+
+}
+
+/*Mobile*/
+
+@media (max-width: 670px) {
+    .block {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .block {
+        text-align: center;
+
+    }
+
+    button {
+        padding: 0.5rem 3rem;
+    }
+}
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.attribution a {
+    color: #333;
+
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    cursor: pointer;
+    color: hsl(228, 45%, 44%);
+
+}
