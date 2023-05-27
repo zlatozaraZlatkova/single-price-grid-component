@@ -109,13 +109,13 @@ body {
 }
 
 button {
-    padding: 0.5rem 5.5rem;
-    color: var(--Light-Gray);
+    padding: 0.9rem 5.5rem;
+    color: white;
     background-color: var(--Bright-Yellow);
     border-radius: 0.3rem;
     text-align: center;
     border: 0.1rem solid var(--Bright-Yellow);
-    box-shadow: 1rem 1rem 1rem var(--Cyan);
+    box-shadow: 0.5rem 0.5rem 0.5rem hsla(218, 22%, 6%, 0.2);
 
 }
 
